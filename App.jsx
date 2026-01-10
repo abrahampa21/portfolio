@@ -1,10 +1,18 @@
-const App = () =>{
+import HeroContent from "./components/HeroContent";
+import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+
+const App = () => {
     return(
-        <header>
-            <nav>
-                <h1>Hello world</h1>
-            </nav>
-        </header>
+        <div className="content">
+            <HeroContent/>
+            <AboutMe/>
+            <Skills/>
+            <Projects/>
+            <Footer/>            
+        </div>
     )
 }
 
