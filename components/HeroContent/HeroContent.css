@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap');
+
+.hero-content {
+  min-height: 90dvh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../public/img/herocontent.webp") center / cover no-repeat;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1{
+    font-weight: 800;
+}
+
+.hero-content h3, .hero-content h4{
+    font-weight: 500;
+}
+
+.hero-content .div-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.hero-content .download-cv{
+    font-family: "League Spartan", sans-serif;
+    text-decoration: none;
+    color: #000;
+    background-color: #d9d9d9;
+    padding: 19px 22px;
+    border-radius: 10px;
+    width: 145px;
+    height: 50px;
+}
