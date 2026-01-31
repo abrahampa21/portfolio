@@ -1,3 +1,5 @@
+import "./Projects.css"
+
 const Projects = () =>{
     return (
         <section className="projects" id="projects">
