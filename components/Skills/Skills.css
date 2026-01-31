@@ -1,3 +1,69 @@
+.skills{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.skills::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../public/img/projects.avif") center / cover no-repeat;
+    filter: blur(5px);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.skills::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(230deg, #5d63a2 4% , #525559 75%);
+    opacity: 0.55;
+    z-index: 1;
+}
+
+.skills > *{
+    position: relative;
+    z-index: 2;
+}
+
+.skills h3{
+    font-weight: 800;
+    border-bottom: 3px solid #00abf4;
+    font-size: 23px;
+    padding-bottom: 3px;
+    width: fit-content;
+}
+
+.skills p{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.programming, .frameworks-languages, .social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.skills-container .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .skill img{
     width: 30px;
     height: 30px;
