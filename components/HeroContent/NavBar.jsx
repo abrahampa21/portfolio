@@ -5,7 +5,7 @@ const NavBar = () => {
     <header>
       <nav>
         <div className="name">
-          <img src="../../../public/img/avatar.png" alt="Avatar" />
+          <img src="../../../public/img/logo.png" alt="Avatar" />
           <h2>ABRAHAM PECH</h2>
         </div>
         <ul className="links">

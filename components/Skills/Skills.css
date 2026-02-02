@@ -25,7 +25,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(230deg, #5d63a2 10% , #525559 50%);
+    background: linear-gradient(230deg, #5d63a2 10% , #525559 40%);
     opacity: 0.55;
     z-index: 1;
 }
@@ -74,4 +74,5 @@
 .skill img{
     width: 30px;
     height: 30px;
+    border-radius: 4px;
 }
