@@ -1,3 +1,15 @@
 .projects{
     background: linear-gradient(90deg, #282d65, #46474a 95%);
+    padding-top: 8rem;
+}
+
+.projects h3{
+    width: fit-content;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 26px;
+    border-bottom: 3px solid #00abf4;
 }
