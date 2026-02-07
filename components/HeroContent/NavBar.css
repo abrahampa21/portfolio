@@ -69,13 +69,16 @@ nav .links a{
 }
 
 @media(max-width: 780px){
+    header{
+        position: unset;
+    }
     nav .links{
         display: none;
     }
 
     .toggle{
         display: block;
-        margin-top: 13px;
+        margin-top: 16px;
     }
 }
 
@@ -85,16 +88,16 @@ nav .links a{
     }
 
     nav .name img{
-        width: 45px;
-        height: 45px;
+        width: 65px;
+        height: 65px;
     }
 
     .toggle{
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
     }
 
     nav{
-        padding: 27px 35px;
+        padding: 20px 30px;
     }
 }

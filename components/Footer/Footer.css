@@ -47,6 +47,7 @@ footer .contact .icons{
 
 footer .contact{
     display: flex;
+    gap: 10rem;
 }
 
 footer .contact p{
@@ -95,7 +96,7 @@ footer .contact .logo-ap{
     border-radius: 9999px;
 }
 
-@media(max-width: 1000px){
+@media (max-width: 1000px){
     .footer-content{
         display: flex;
         flex-direction: column;
@@ -108,5 +109,11 @@ footer .contact .logo-ap{
         display: flex;
         align-items: center;
         gap: 4rem;  
+    }
+}
+
+@media (max-width:480px){
+    footer .copyright{
+        font-size: 14px;
     }
 }
