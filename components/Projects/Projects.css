@@ -13,3 +13,8 @@
     font-size: 26px;
     border-bottom: 3px solid #00abf4;
 }
+
+.splide-container img{
+    width: 100px;
+    height: auto;
+}

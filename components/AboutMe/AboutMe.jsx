@@ -25,7 +25,7 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-        <img src="../../../public/img/ap.jpg" alt="Abraham Pech" />
+        <img src="/img/ap.jpg" alt="Abraham Pech" />
       </div>
     </section>
   );

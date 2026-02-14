@@ -5,7 +5,7 @@ const NavBar = () => {
     <header>
       <nav>
         <div className="name">
-          <img src="../../../public/img/logo.png" alt="Avatar" />
+          <img src="img/logo.webp" alt="Avatar" />
           <h2>ABRAHAM PECH</h2>
         </div>
         <ul className="links">
@@ -24,7 +24,7 @@ const NavBar = () => {
         </ul>
 
         <div className="toggle">
-          <img src="../../../public/img/bars.png" alt="Bars" />
+          <img src="img/bars.png" alt="Bars" />
         </div>
 
         <ul className="menu-responsive">

@@ -12,7 +12,7 @@ const Footer = () => {
               https://github.com/abrahampa21/portfolio
             </a>
           </p>
-          <img src="../../../public/img/skills/react.webp" alt="React" />
+          <img src="/img/skills/react.webp" alt="React" />
         </div>
         <div className="contact">
           <div className="icons">
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
           <img
-            src="../../../public/img/logo.png"
+            src="/img/logo.webp"
             className="logo-ap"
             alt="Abraham Pech"
           />
