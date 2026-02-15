@@ -1,6 +1,9 @@
 .projects{
     background: linear-gradient(90deg, #282d65, #46474a 95%);
     padding-top: 8rem;
+    padding-bottom: 4rem;
+    font-family: "Lato", sans-serif;
+
 }
 
 .projects h3{
@@ -14,7 +17,14 @@
     border-bottom: 3px solid #00abf4;
 }
 
+
 .splide-container img{
     width: 100px;
     height: auto;
+}
+
+.card-slide{
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
 }

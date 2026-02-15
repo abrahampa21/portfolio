@@ -13,7 +13,7 @@ const Projects = () => {
             type: "loop",
             perPage: 3,
             perMove: 1,
-            gap: "1rem",
+            gap: "1.5rem",
             pagination: false,
             arrows: true,
             drag: "free",
@@ -23,20 +23,31 @@ const Projects = () => {
                 perPage: 2,
               },
               450:{
-                perpage:1,
+                perPage: 1,
               },
             },
           }}
           aria-label="My Favorite Images"
         >
-          <SplideSlide>
+          <SplideSlide className="card-slide">
             <img src="/img/projects/decori.webp" loading="lazy" alt="Ticket sale managment project"/>
+            <div className="content">
+              <h4>Ticket sales</h4>
+              <a href="#">See more</a>
+            </div>
           </SplideSlide>
-          <SplideSlide>
-            <img src="image2.jpg" alt="Image 2" />
+          <SplideSlide className="card-slide">
+            <div className="content">
+              <h4>CRUD Program</h4>
+              <a href="#">See more</a>
+            </div>
           </SplideSlide>
-          <SplideSlide>
-            <img src="image3.jpg" alt="Image 3" />
+          <SplideSlide className="card-slide">
+            <img src="/img/projects/iteslogo.webp" alt="Vocational Test" />
+            <div className="content">
+              <h4>Vocational Test</h4>
+              <a href="#">See more</a>
+            </div>
           </SplideSlide>
         </Splide>
       </div>
