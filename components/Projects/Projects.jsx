@@ -8,21 +8,21 @@ const Projects = () => {
       <h3>Projects</h3>
       <div className="projects">
         <Splide
-        className="splide-container"
+          className="splide-container"
           options={{
             type: "loop",
-            perPage: 3,
+            perPage: 4,
             perMove: 1,
             gap: "1.5rem",
             pagination: false,
             arrows: true,
             drag: "free",
             snap: true,
-            breakpoints:{
-              900:{
+            breakpoints: {
+              900: {
                 perPage: 2,
               },
-              450:{
+              700: {
                 perPage: 1,
               },
             },
@@ -30,23 +30,56 @@ const Projects = () => {
           aria-label="My Favorite Images"
         >
           <SplideSlide className="card-slide">
-            <img src="/img/projects/decori.webp" loading="lazy" alt="Ticket sale managment project"/>
+            <img
+              src="/img/projects/decori.webp"
+              loading="lazy"
+              alt="Ticket sale managment project"
+            />
             <div className="content">
               <h4>Ticket sales</h4>
-              <a href="#">See more</a>
+              <button href="#" className="see-more">See more</button>
             </div>
           </SplideSlide>
           <SplideSlide className="card-slide">
+            <img src="/img/projects/dc.webp" alt="Dulces Cuidados" />
             <div className="content">
-              <h4>CRUD Program</h4>
-              <a href="#">See more</a>
+              <h4>Dulces Cuidados</h4>
+              <button href="" className="see-more">See more</button>
             </div>
           </SplideSlide>
           <SplideSlide className="card-slide">
             <img src="/img/projects/iteslogo.webp" alt="Vocational Test" />
             <div className="content">
               <h4>Vocational Test</h4>
-              <a href="#">See more</a>
+              <button href="#" className="see-more">See more</button>
+            </div>
+          </SplideSlide>
+          <SplideSlide className="card-slide">
+            <img src="/img/projects/academix.webp" alt="Academix" />
+            <div className="content">
+              <h4>Academix</h4>
+              <button href="#" className="see-more">See more</button>
+            </div>
+          </SplideSlide>
+          <SplideSlide className="card-slide">
+            <img src="/img/projects/codelab.webp" alt="Codelab" />
+            <div className="content">
+              <h4>CodeLab</h4>
+              <button href="#" className="see-more">See more</button>
+            </div>
+          </SplideSlide>
+          <SplideSlide className="card-slide">
+            <img src="/img/projects/tiktime.webp" alt="tiktime" />
+            <div className="content">
+              <h4>Tik-Time</h4>
+              <button href="#" className="see-more">See more</button>
+            </div>
+          </SplideSlide>
+          <SplideSlide className="card-slide">
+            <img src="/img/projects/encryp.png" alt="Java Encryptor" />
+            <div className="content">
+              <h4>Java Encryptor</h4>
+              <button href="#" className="see-more">See more</button>
             </div>
           </SplideSlide>
         </Splide>

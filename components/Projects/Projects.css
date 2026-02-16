@@ -1,9 +1,8 @@
 .projects{
     background: linear-gradient(90deg, #282d65, #46474a 95%);
-    padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem ;
     font-family: "Lato", sans-serif;
-
+    scroll-margin-top: 65px;
 }
 
 .projects h3{
@@ -15,16 +14,49 @@
     font-weight: 800;
     font-size: 26px;
     border-bottom: 3px solid #00abf4;
+
 }
 
+.splide-container{
+    padding: 0 4rem;
+}
 
-.splide-container img{
-    width: 100px;
+.card-slide img{
+    width: 100%;
     height: auto;
+    border-radius: 7px;
+
 }
 
 .card-slide{
-    width: 250px;
-    height: 300px;
-    background-color: #fff;
+    height: 430px;
+    padding: 12px;
+    background-color: #d9d9d9;
+    border-radius: 7px;
+}
+
+.card-slide .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 25px;
+}
+
+.card-slide .content h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-slide .content .see-more{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    width: 50%;
+    padding: 8px 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
 }

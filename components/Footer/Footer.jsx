@@ -12,7 +12,10 @@ const Footer = () => {
               https://github.com/abrahampa21/portfolio
             </a>
           </p>
-          <img src="/img/skills/react.webp" alt="React" />
+          <div className="icons-project">
+            <img src="/img/skills/react.webp" alt="React" />
+            <img src="/img/splide.png" alt="" />
+          </div>
         </div>
         <div className="contact">
           <div className="icons">
@@ -21,7 +24,7 @@ const Footer = () => {
               <a>
                 <img src="../../../public/img/linkedin.png" alt="LinkedIn" />
               </a>
-              <a>
+              <a href="https://github.com/abrahampa21" target="_blank">
                 <img src="../../../public/img/github.png" alt="Github" />
               </a>
               <a>
@@ -29,11 +32,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <img
-            src="/img/logo.webp"
-            className="logo-ap"
-            alt="Abraham Pech"
-          />
+          <img src="/img/logo.webp" className="logo-ap" alt="Abraham Pech" />
         </div>
       </div>
       <p className="copyright">All rights reserved Abraham Pech &copy; 2026</p>

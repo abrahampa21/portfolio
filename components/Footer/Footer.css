@@ -34,7 +34,6 @@ footer img{
 }
 
 .footer-content .text img{
-    margin: 0 auto;
     border-radius: 7px;
 }
 
@@ -96,6 +95,12 @@ footer .contact .logo-ap{
     border-radius: 9999px;
 }
 
+.icons-project{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 @media (max-width: 1000px){
     .footer-content{
         display: flex;
@@ -115,5 +120,22 @@ footer .contact .logo-ap{
 @media (max-width:480px){
     footer .copyright{
         font-size: 14px;
+    }
+
+    footer .text{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 200px;
+    }
+
+    footer .text p{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    footer .contact{
+        display: flex;
+        flex-direction: column;
     }
 }
