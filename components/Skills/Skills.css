@@ -9,7 +9,7 @@
     align-items: center;
     gap: 280px;
     padding-top: 2rem;
-    height: 120dvh;
+    min-height: 110dvh;
 }
 
 .skills::before{

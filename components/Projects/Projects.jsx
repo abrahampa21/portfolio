@@ -2,7 +2,7 @@ import "./Projects.css";
 import "@splidejs/react-splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useState } from "react";
-import projectsData from "./Projects.js";
+import dataProjects from "./ProjectsData";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -34,7 +34,7 @@ const Projects = () => {
           }}
           aria-label="My Favorite Images"
         >
-          {projectsData.map((proj, index) => (
+          {dataProjects.map((proj, index) => (
             <SplideSlide key={index} className="card-slide">
               <img src={proj.image} loading="lazy" alt={proj.title} />
               <div className="content">
@@ -69,8 +69,8 @@ const Projects = () => {
             </div>
 
             <div className="modal-buttons">
-              <a href={setSelectedProject.demo || "#"} className="demo-btn">Live Demo</a>
-              <a href={setSelectedProject.github || "#"} className="github-btn">Github</a>
+              <a href={selectedProject.demo || "#"} className="demo-btn">Live Demo</a>
+              <a href={selectedProject.github || "#"} className="github-btn" target="_blank">Github</a>
             </div>
           </div>
         </div>
