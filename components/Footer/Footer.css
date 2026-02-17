@@ -1,7 +1,7 @@
 footer{
     font-family: "Lato", sans-serif;
     background: linear-gradient(180deg, #242426, #46474A 85%);
-    min-height: 270px;
+    height: 270px;
     display: flex;
     flex-direction: column;
 }
@@ -100,6 +100,7 @@ footer .contact .logo-ap{
     align-items: center;
     gap: 1rem;
 }
+
 
 @media (max-width: 1000px){
     .footer-content{
