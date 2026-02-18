@@ -21,14 +21,14 @@ const Footer = () => {
           <div className="icons">
             <p>Contact</p>
             <div className="icons-media">
-              <a>
-                <img src="../../../public/img/linkedin.png" alt="LinkedIn" />
+              <a href="https://www.linkedin.com/in/abraham-pech-629560306" target="_blank">
+                <img src="/img/linkedin.png" alt="LinkedIn" />
               </a>
               <a href="https://github.com/abrahampa21" target="_blank">
-                <img src="../../../public/img/github.png" alt="Github" />
+                <img src="/img/github.png" alt="Github" />
               </a>
               <a>
-                <img src="../../../public/img/gmail.webp" alt="Gmail" />
+                <img src="/img/gmail.webp" alt="Gmail" />
               </a>
             </div>
           </div>

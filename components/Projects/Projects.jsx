@@ -52,25 +52,45 @@ const Projects = () => {
       </div>
 
       {/*Modal*/}
-      {selectedProject &&(
+      {selectedProject && (
         <div className="modal" onClick={() => setSelectedProject(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={() => setSelectedProject(null)}>&times;</span>
+            <span className="close" onClick={() => setSelectedProject(null)}>
+              &times;
+            </span>
             <h2>{selectedProject.title}</h2>
-            <img src={selectedProject.image}  alt={selectedProject.title} className="modal-image" />
+            <img
+              src={selectedProject.image}
+              alt={selectedProject.title}
+              className="modal-image"
+            />
             <p>{selectedProject.description}</p>
 
             <div className="tech-container">
-              {selectedProject.tech.map((tech, i) => (
-                <span key={i} className="tech-badge">
-                  {tech}
-                </span>
-              ))}
+              <h4>Tech Badge</h4>
+              <div className="container-img">
+                {selectedProject.tech.map((tech, i) => (
+                  <img
+                    key={i}
+                    className="tech-badge"
+                    alt={tech.label}
+                    src={tech.image}
+                  />
+                ))}
+              </div>
             </div>
 
             <div className="modal-buttons">
-              <a href={selectedProject.demo || "#"} className="demo-btn">Live Demo</a>
-              <a href={selectedProject.github || "#"} className="github-btn" target="_blank">Github</a>
+              <a href={selectedProject.demo || "#"} className="demo-btn">
+                Live Demo
+              </a>
+              <a
+                href={selectedProject.github || "#"}
+                className="github-btn"
+                target="_blank"
+              >
+                Github
+              </a>
             </div>
           </div>
         </div>

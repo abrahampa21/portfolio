@@ -30,6 +30,14 @@ const Skills = () => {
             <img src="/img/skills/mysql.webp" alt="MySQL" />
             <p>MySQL</p>
           </div>
+          <div className="skill">
+            <img src="/img/skills/java.svg" alt="Java" />
+            <p>Java</p>
+          </div>
+          <div className="skill">
+            <img src="/img/skills/cpp.png" alt="C++" />
+            <p>C++</p>
+          </div>
         </div>
       </div>
       <div className="frameworks-languages skills-container">
