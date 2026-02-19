@@ -75,6 +75,7 @@ const Projects = () => {
                     className="tech-badge"
                     alt={tech.label}
                     src={tech.image}
+                    title={tech.label}
                   />
                 ))}
               </div>

@@ -1,7 +1,7 @@
 footer{
     font-family: "Lato", sans-serif;
     background: linear-gradient(180deg, #242426, #46474A 85%);
-    height: 270px;
+    min-height: 270px;
     display: flex;
     flex-direction: column;
 }
