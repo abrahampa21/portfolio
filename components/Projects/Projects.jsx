@@ -24,12 +24,12 @@ const Projects = () => {
             drag: "free",
             snap: true,
             breakpoints: {
-              900: {
+              700: {
                 perPage: 2,
               },
-              700: {
+              500: {
                 perPage: 1,
-              },
+              }
             },
           }}
           aria-label="My Favorite Images"

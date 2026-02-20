@@ -51,6 +51,19 @@ const dataProjects = [
     github: "https://github.com/abrahampa21/academix.git",
   },
   {
+    title: "Capypanel",
+    image: "/img/projects/capypanel.png",
+    description:
+      "Comments panel for the knowledge fair of the ITES René Descartes University",
+    tech: [
+      { label: "HTML", image: "/img/skills/html.webp" },
+      { label: "CSS", image: "/img/skills/css.webp" },
+      { label: "JavaScript", image: "/img/skills/js.png" },
+    ],
+    demo: "#",
+    github: "https://github.com/abrahampa21/panelComentarios.git",
+  },
+  {
     title: "CodeLab",
     image: "/img/projects/codelab.webp",
     description: "CodeLab programming club web platform",
