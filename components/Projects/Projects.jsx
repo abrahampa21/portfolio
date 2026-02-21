@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h3>Projects</h3>
-      <div className="projects">
+      <div className="projects-container">
         {/*Carousel*/}
         <Splide
           className="splide-container"
@@ -24,7 +24,7 @@ const Projects = () => {
             drag: "free",
             snap: true,
             breakpoints: {
-              700: {
+              1000: {
                 perPage: 2,
               },
               500: {

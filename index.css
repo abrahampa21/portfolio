@@ -16,7 +16,7 @@ html,body{
     min-height: 90dvh;
 }
 
-.about-me,  .projects{
+.about-me{
     min-height: 100vh;
 }
 
