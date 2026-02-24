@@ -13,9 +13,10 @@ footer{
     padding: 50px 70px;
 }
 
-.footer-content .text p{
-    width: 420px;
+.mobile-break{
+    display: inline;
 }
+
 
 footer img{
     width: 65px;
@@ -101,6 +102,11 @@ footer .contact .logo-ap{
     gap: 1rem;
 }
 
+@media (min-width:900px){
+    .mobile-break{
+        display: block;
+    }
+}
 
 @media (max-width: 1000px){
     .footer-content{
@@ -112,27 +118,31 @@ footer .contact .logo-ap{
     }
 
     footer .contact{
-        display: flex;
         align-items: center;
-        gap: 4rem;  
+        gap: 1.8rem;  
     }
 }
 
 @media (max-width:480px){
+    .footer-content{
+        gap: 1.8rem;
+    }
     footer .copyright{
         font-size: 14px;
     }
 
     footer .text{
-        display: flex;
         align-items: center;
-        gap: 1rem;
-        width: 200px;
+        width: 270px;
     }
 
     footer .text p{
         text-align: center;
         font-size: 14px;
+    }
+
+    .mobile-break{
+        display: block;
     }
 
     footer .contact{

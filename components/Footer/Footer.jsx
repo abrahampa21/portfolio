@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="text">
           <p>
-            This portfolio was built with React and other libraries. Source code
-            available on Github: <br></br>{" "}
+            This portfolio was built with React and other libraries.
+            <span className="mobile-break"> Source code available on Github:</span>
             <a href="https://github.com/abrahampa21/portfolio" target="_blank">
               https://github.com/abrahampa21/portfolio
             </a>
@@ -21,7 +21,10 @@ const Footer = () => {
           <div className="icons">
             <p>Contact</p>
             <div className="icons-media">
-              <a href="https://www.linkedin.com/in/abraham-pech-629560306" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/abraham-pech-629560306"
+                target="_blank"
+              >
                 <img src="/img/linkedin.png" alt="LinkedIn" />
               </a>
               <a href="https://github.com/abrahampa21" target="_blank">

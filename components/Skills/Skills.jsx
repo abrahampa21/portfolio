@@ -19,10 +19,6 @@ const Skills = () => {
             <p>JavaScript</p>
           </div>
           <div className="skill">
-            <img src="/img/skills/ts.png" alt="TS" />
-            <p>TypeScript</p>
-          </div>
-          <div className="skill">
             <img src="/img/skills/php.png" alt="PHP" />
             <p>PHP</p>
           </div>
