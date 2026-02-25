@@ -52,7 +52,7 @@ const dataProjects = [
   },
   {
     title: "Capypanel",
-    image: "/img/projects/capypanel.png",
+    image: "/img/projects/capypanel.webp",
     description:
       "Comments panel for the knowledge fair of the ITES René Descartes University",
     tech: [

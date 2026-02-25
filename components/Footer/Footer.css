@@ -126,6 +126,7 @@ footer .contact .logo-ap{
 @media (max-width:480px){
     .footer-content{
         gap: 1.8rem;
+        padding:30px 70px;
     }
     footer .copyright{
         font-size: 14px;
