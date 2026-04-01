@@ -21,8 +21,8 @@
 
 .about-me .titles h2 {
   font-size: 26px;
-  margin: 0 auto;
   font-weight: 800;
+  text-align: center;
 }
 
 .about-me .titles h3 {

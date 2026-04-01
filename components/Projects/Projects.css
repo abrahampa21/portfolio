@@ -29,7 +29,7 @@
 }
 
 .splide-container {
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 .card-slide img {
@@ -41,7 +41,8 @@
 
 .card-slide {
   padding: 12px 12px 15px;
-  background-color: #d9d9d9;
+  background: #f1f5f9; 
+  color: #0b0f14;
   border-radius: 7px;
   display: flex;
   flex-direction: column;
@@ -259,7 +260,7 @@
     align-items: center;
     flex-direction: column;
   }
-  
+
   .splide-container {
     padding: 0 1rem;
   }
@@ -269,25 +270,25 @@
   .projects {
     padding: 2rem 1rem;
   }
-  
+
   .projects h3 {
     font-size: 22px;
     margin-bottom: 2rem;
   }
-  
+
   .splide-container {
     padding: 0;
   }
-  
+
   .modal-content {
     width: 95%;
     padding: 1.5rem;
   }
-  
+
   .modal-buttons {
     flex-direction: column;
   }
-  
+
   .demo-btn,
   .github-btn {
     width: 100%;
