@@ -1,6 +1,6 @@
 .about-me {
   min-height: 100dvh;
-  background: linear-gradient(180deg, #969696, #120f0f);
+  background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-dark) 100%);
   padding: 10rem 1rem;
   display: flex;
   justify-content: center;
@@ -10,16 +10,16 @@
 .about-me .titles,
 .text {
   font-family: "Lato", sans-serif;
-  color: #fff;
+  color: var(--text-light);
   text-align: left;
+  transition: var(--transition);
 }
 
 .about-me .content .titles {
   margin-bottom: 1rem;
 }
 
-.about-me .titles,
-h2 {
+.about-me .titles h2 {
   font-size: 26px;
   margin: 0 auto;
   font-weight: 800;
@@ -27,16 +27,22 @@ h2 {
 
 .about-me .titles h3 {
   font-size: 23px;
-  border-bottom: 3px solid #00abf4;
+  border-bottom: 3px solid var(--primary-color);
   width: fit-content;
   padding-bottom: 3px;
   margin: 0 auto;
   font-weight: 700;
+  display: block;
 }
 
 .about-me .content {
   max-width: 490px;
   width: 100%;
+}
+
+.about-me .text {
+  font-size: 15px;
+  color: var(--text-muted);
 }
 
 .about-me .div-content {

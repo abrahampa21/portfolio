@@ -1,5 +1,5 @@
 .projects {
-  background: linear-gradient(90deg, #282d65, #46474a 95%);
+  background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-light) 100%);
   padding-top: 3rem;
   font-family: "Lato", sans-serif;
   scroll-margin-top: 65px;
@@ -14,12 +14,18 @@
   width: fit-content;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
-  color: #fff;
+  color: var(--text-light);
   text-transform: uppercase;
   font-weight: 800;
   font-size: 26px;
-  border-bottom: 3px solid #00abf4;
+  border-bottom: 3px solid var(--primary-color);
   margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.projects h3:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
 }
 
 .splide-container {
@@ -30,6 +36,7 @@
   width: 100%;
   height: auto;
   border-radius: 7px;
+  transition: var(--transition);
 }
 
 .card-slide {
@@ -38,6 +45,16 @@
   border-radius: 7px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.card-slide:hover img {
+  transform: scale(1.05);
+}
+
+.card-slide:hover {
+  box-shadow: 0 12px 32px rgba(0, 171, 244, 0.25);
 }
 
 .card-slide .content {
@@ -56,108 +73,33 @@
 }
 
 .card-slide .content .see-more {
-  background-color: #000;
+  background: var(--gradient-primary);
   border: none;
   color: #fff;
   width: 50%;
   padding: 8px 1rem;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
+
+.card-slide .content .see-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(124, 58, 237, 0.5);
 }
 
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   animation: fadeIn 0.3s ease;
-}
-
-.modal-content {
-  background: #ffffff;
-  width: 90%;
-  max-width: 800px;
-  padding: 2rem;
-  border-radius: 12px;
-  position: relative;
-  animation: slideUp 0.3s ease;
-}
-
-.modal-content h2 {
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  color: #111;
-}
-
-.modal-image {
-  width: 130px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 28px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.tech-container {
-  margin-top: 1rem;
-}
-
-.tech-container h3 {
-  color: #000;
-}
-
-.tech-container .container-img {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.tech-badge {
-  width: 40px;
-  height: auto;
-}
-
-.modal-buttons {
-  margin-top: 1.5rem;
-}
-
-.demo-btn,
-.github-btn {
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  margin-right: 10px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.demo-btn {
-  background: #2563eb;
-  color: white;
-}
-
-.demo-btn:hover {
-  background: #1e40af;
-}
-
-.github-btn {
-  border: 1px solid #111;
-  color: #111;
-}
-
-.github-btn:hover {
-  background: #111;
-  color: white;
 }
 
 @keyframes fadeIn {
@@ -171,13 +113,143 @@
 
 @keyframes slideUp {
   from {
-    transform: translateY(40px);
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.modal-content {
+  background: var(--bg-light);
+  color: var(--text-light);
+  width: 90%;
+  max-width: 700px;
+  padding: 2.5rem;
+  border-radius: 16px;
+  position: relative;
+  animation: slideUp 0.3s ease;
+  border: 1px solid rgba(0, 171, 244, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.modal-content h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.modal-image {
+  width: 140px;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--primary-color);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--text-light);
+  background: none;
+  border: none;
+  transition: var(--transition);
+}
+
+.close:hover {
+  color: var(--primary-color);
+  transform: rotate(90deg);
+}
+
+.tech-container {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 171, 244, 0.2);
+}
+
+.tech-container h3 {
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.tech-container .container-img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-badge {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  background: rgba(0, 171, 244, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 171, 244, 0.3);
+  transition: var(--transition);
+}
+
+.tech-badge:hover {
+  background: rgba(0, 171, 244, 0.2);
+  border-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.tech-badge img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.modal-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.demo-btn,
+.github-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+  font-size: 14px;
+}
+
+.demo-btn {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
+
+.demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(124, 58, 237, 0.5);
+}
+
+.github-btn {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+}
+
+.github-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
@@ -186,5 +258,40 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  
+  .splide-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    padding: 2rem 1rem;
+  }
+  
+  .projects h3 {
+    font-size: 22px;
+    margin-bottom: 2rem;
+  }
+  
+  .splide-container {
+    padding: 0;
+  }
+  
+  .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  
+  .modal-buttons {
+    flex-direction: column;
+  }
+  
+  .demo-btn,
+  .github-btn {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
   }
 }

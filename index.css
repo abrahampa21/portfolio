@@ -1,16 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap');
 
+:root {
+    --primary-color: #00d4ff;
+    --primary-dark: #0099cc;
+    --bg-dark: #0a0e27;
+    --bg-light: #1a1f3a;
+    --text-light: #e8eef5;
+    --text-muted: #a0a9c3;
+    --accent-purple: #9d4edd;
+    --accent-blue: #3a86ff;
+    --gradient-primary: linear-gradient(135deg, #9d4edd 0%, #3a86ff 100%);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.25);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+}
 
 .hero-content{
     min-height: 90dvh;

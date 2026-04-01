@@ -1,6 +1,7 @@
 footer{
     font-family: "Lato", sans-serif;
-    background: linear-gradient(180deg, #242426, #46474A 85%);
+    background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(10, 14, 39, 0.9) 100%);
+    border-top: 1px solid rgba(0, 171, 244, 0.2);
     min-height: 270px;
     display: flex;
     flex-direction: column;
@@ -21,6 +22,9 @@ footer{
 footer img{
     width: 65px;
     height: 65px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    transition: var(--transition);
 }
 
 
@@ -31,7 +35,9 @@ footer img{
 }
 
 .footer-content .text a{
-    color: #fff;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
 }
 
 .footer-content .text img{
@@ -123,23 +129,24 @@ footer .contact .logo-ap{
     }
 }
 
-@media (max-width:480px){
+@media (max-width:600px){
     .footer-content{
-        gap: 1.8rem;
-        padding:30px 70px;
+        gap: 1.5rem;
+        padding: 1.5rem;
     }
+    
     footer .copyright{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     footer .text{
         align-items: center;
-        width: 270px;
+        text-align: center;
     }
 
     footer .text p{
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .mobile-break{
@@ -147,7 +154,6 @@ footer .contact .logo-ap{
     }
 
     footer .contact{
-        display: flex;
         flex-direction: column;
     }
 }
