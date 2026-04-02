@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     gap: 280px;
-    padding-top: 5.5rem;
+    padding: 5.5rem 2rem;
     min-height: 100vh;
 }
 
@@ -67,7 +67,10 @@
     align-items: center;
     gap: 10px;
     transition: var(--transition);
-    cursor: pointer;
+    background-color: rgba(255,255,255,0.1);
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .skill:hover {
@@ -85,8 +88,8 @@
 }
 
 .skill img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: auto;
     border-radius: 4px;
 }
 

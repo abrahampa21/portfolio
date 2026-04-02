@@ -1,6 +1,6 @@
 .about-me {
   min-height: 100dvh;
-  background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-dark) 100%);
+  background: linear-gradient(180deg, #17191f 0%, #0a0e27 100%);
   padding: 10rem 1rem;
   display: flex;
   justify-content: center;
@@ -52,6 +52,7 @@
   align-items: center;
   max-width: 1100px;
   width: 100%;
+  padding: 0 2rem;
 }
 
 .about-me .div-content img {

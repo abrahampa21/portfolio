@@ -43,6 +43,8 @@
     align-items: center;
     text-align: center;
     gap: 2rem;
+    padding: 0 2rem;
+    max-width: 900px;
 }
 
 .div-content .content{

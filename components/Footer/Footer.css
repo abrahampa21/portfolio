@@ -1,6 +1,6 @@
 footer{
     font-family: "Lato", sans-serif;
-    background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(10, 14, 39, 0.9) 100%);
+    background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(42, 46, 73, 0.9) 100%);
     border-top: 1px solid rgba(0, 171, 244, 0.2);
     min-height: 270px;
     display: flex;
@@ -11,7 +11,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 70px;
+    padding: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .mobile-break{
@@ -23,7 +26,6 @@ footer img{
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    border: 2px solid var(--primary-color);
     transition: var(--transition);
 }
 
@@ -74,6 +76,16 @@ footer .icons-media{
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+footer .icons-media a{
+    transition: var(--transition);
+    border-radius: 100%;
+}
+
+footer .icons-media a:hover{
+  box-shadow: 0 12px 36px rgba(0, 212, 255, 0.25);
+    transform: scale(1.2);
 }
 
 footer .icons-media a:nth-child(2) img{

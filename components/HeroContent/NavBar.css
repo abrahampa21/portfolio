@@ -13,8 +13,10 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 50px;
-    width: 97%;
+    width: 100%;
+    max-width: 100%;
 }
 
 nav .name{
@@ -84,6 +86,7 @@ nav .links a:hover::after {
     height: 2px;
     background: var(--text-light);
     transition: var(--transition);
+    transform-origin: center;
 }
 
 .toggle:hover span {
@@ -140,6 +143,19 @@ nav .links a:hover::after {
     background: rgba(0, 171, 244, 0.1);
 }
 
+.toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(11px);
+}
+
+.toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-11px);
+}
+
 @media(max-width: 780px){
     header{
         position: sticky;
@@ -154,12 +170,13 @@ nav .links a:hover::after {
 }
 
 @media(max-width: 450px){
-    nav {
-        padding: 12px 20px;
+    nav{
+        justify-content: center;
+        gap: 4rem;
+        padding: 25px;
     }
-    
     nav .name h2{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     nav .name img{
@@ -172,8 +189,4 @@ nav .links a:hover::after {
         height: 28px;
     }
     
-    .menu-responsive {
-        right: 10px;
-        min-width: 180px;
-    }
 }
