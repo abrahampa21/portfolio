@@ -34,7 +34,10 @@ const NavBar = () => {
           </li>
         </ul>
 
-        <div className={`toggle ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
+        <div
+          className={`toggle ${isMenuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -42,16 +45,28 @@ const NavBar = () => {
 
         <ul className={`menu-responsive ${isMenuOpen ? "active" : ""}`}>
           <li>
-            <a href="#" onClick={closeMenu}>Home</a>
+            <a href="#" onClick={closeMenu}>
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about-me" onClick={closeMenu}>About me</a>
+            <a href="#about-me" onClick={closeMenu}>
+              <i class="fa-solid fa-user"></i>
+              About me
+            </a>
           </li>
           <li>
-            <a href="#skills" onClick={closeMenu}>Skills</a>
+            <a href="#skills" onClick={closeMenu}>
+              <i class="fa-solid fa-brain"></i>
+              Skills
+            </a>
           </li>
           <li>
-            <a href="#projects" onClick={closeMenu}>Projects</a>
+            <a href="#projects" onClick={closeMenu}>
+              <i class="fa-solid fa-diagram-project"></i>
+              Projects
+            </a>
           </li>
         </ul>
       </nav>
