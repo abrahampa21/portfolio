@@ -78,8 +78,8 @@
 }
 
 .skills-container .content{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
 }
 
@@ -101,5 +101,25 @@
     
     .skills-container {
         width: 100%;
+    }
+
+    .skills-container .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 3rem 1rem;
+    }
+
+    .skills-container .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container .content {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
